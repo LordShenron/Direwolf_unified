@@ -1,5 +1,6 @@
 /*
 <<<<<<< HEAD
+<<<<<<< HEAD
  * Author: andip71, 28.08.2017
  *
  * Version 1.0.0
@@ -8,6 +9,11 @@
  *
  * Version 1.1.0
 >>>>>>> 6a51280d7ddc... boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
+=======
+ * Author: andip71, 29.08.2017
+ *
+ * Version 1.0.1
+>>>>>>> 4a5a1bf83661... boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
  *
  * This software is licensed under the terms of the GNU General Public
  * License version 2, as published by the Free Software Foundation, and
@@ -24,6 +30,7 @@
  * Change log:
  *
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  * 1.1.0 (01.09.2017)
  *   - By default, the following wakelocks are blocked in an own list
@@ -33,6 +40,11 @@
  *   - Add killing wakelock when currently active
  *
 >>>>>>> 6a51280d7ddc... boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
+=======
+ * 1.0.1 (29.08.2017)
+ *   - Add killing wakelock when currently active
+ *
+>>>>>>> 4a5a1bf83661... boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
  * 1.0.0 (28.08.2017)
  *   - Initial version
  *
@@ -47,10 +59,14 @@
 <<<<<<< HEAD
 
 
+<<<<<<< HEAD
 #define BOEFFLA_WL_BLOCKER_VERSION	"1.0.0"
 =======
 #include "boeffla_wl_blocker.h"
 >>>>>>> 6a51280d7ddc... boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
+=======
+#define BOEFFLA_WL_BLOCKER_VERSION	"1.0.1"
+>>>>>>> 4a5a1bf83661... boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
 
 
 /*****************************************/
