@@ -23,6 +23,7 @@
 #ifdef CONFIG_BOEFFLA_WL_BLOCKER
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 char list_wl[255];
 char list_wl_search[257];
 =======
@@ -34,6 +35,11 @@ char list_wl_search[LENGTH_LIST_WL_SEARCH] = {0};
 char list_wl[255] = {0};
 char list_wl_search[257] = {0};
 >>>>>>> 4a5a1bf83661... boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
+=======
+#include "boeffla_wl_blocker.h"
+
+char list_wl_search[LENGTH_LIST_WL_SEARCH] = {0};
+>>>>>>> 6a51280d7ddc... boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
 bool wl_blocker_active = false;
 bool wl_blocker_debug = false;
 
@@ -471,10 +477,13 @@ static bool check_for_block(struct wakeup_source *ws)
 =======
 	char wakelock_name[52] = {0};
 	int length;
+<<<<<<< HEAD
 >>>>>>> 6a51280d7ddc... boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
 =======
 	char wakelock_name[52] = {0};
 >>>>>>> 4a5a1bf83661... boeffla_wl_blocker: update to wakelock blocker driver v1.0.1
+=======
+>>>>>>> 6a51280d7ddc... boeffla_wl_blocker: update to wakelock blocker driver v1.1.0
 
 	// if debug mode on, print every wakelock requested
 	if (wl_blocker_debug)
