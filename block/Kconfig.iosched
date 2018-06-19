@@ -32,6 +32,11 @@ config IOSCHED_DEADLINE
 	  a new point in the service tree and doing a batch of IO from there
 	  in case of expiry.
 
+config IOSCHED_MAPLE
+	tristate "Maple I/O scheduler"
+	default y
+
+
 config IOSCHED_CFQ
 	tristate "CFQ I/O scheduler"
 	default y
@@ -73,7 +78,7 @@ config CGROUP_BFQIO
 
 choice
 	prompt "Default I/O scheduler"
-	default DEFAULT_CFQ
+	default DEFAULT_MAPLE
 	help
 	  Select the I/O scheduler which will be used by default for all
 	  block devices.
@@ -83,6 +88,10 @@ choice
 
 	config DEFAULT_CFQ
 		bool "CFQ" if IOSCHED_CFQ=y
+
+
+	config DEFAULT_MAPLE
+		bool "Maple" if IOSCHED_MAPLE=y
 
 	config DEFAULT_BFQ
 		bool "BFQ" if IOSCHED_BFQ=y
@@ -97,14 +106,15 @@ choice
 	config DEFAULT_NOOP
 		bool "No-op"
 
-endchoice
-
 config DEFAULT_IOSCHED
 	string
 	default "deadline" if DEFAULT_DEADLINE
 	default "cfq" if DEFAULT_CFQ
 	default "bfq" if DEFAULT_BFQ
 	default "noop" if DEFAULT_NOOP
+	default "zen" if DEFAULT_ZEN
+	default "maple" if DEFAULT_MAPLE
+
 
 endmenu
 
