@@ -149,14 +149,6 @@ config CPU_FREQ_DEFAULT_GOV_SCHED
 	  Use the CPUfreq governor 'sched' as default. This scales
 	  cpu frequency using CPU utilization estimates from the
 	  scheduler.
-<<<<<<< HEAD
-=======
-
-config CPU_FREQ_DEFAULT_GOV_LIONFISH
-	bool "lionfish"
-	select CPU_FREQ_GOV_LIONFISH
-	help
-	  Use the CPUFreq governor 'lionfish' as default.
 
 config CPU_FREQ_DEFAULT_GOV_ELECTRON
 	bool "electron"
@@ -167,7 +159,6 @@ config CPU_FREQ_DEFAULT_GOV_ELECTRON
 	  loading your cpufreq low-level hardware driver, using the
 	  'electron' governor for latency-sensitive workloads.
 
->>>>>>> 8e25cc95d3c9... Add Electron
 endchoice
 
 config CPU_FREQ_GOV_PERFORMANCE
